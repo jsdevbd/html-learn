@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="author" content="Md. Imtiyaz Hossain, imtiyaz.aust@gmail.com">
+	<meta name="designer" content="Md. Imtiyaz Hossain">
+	<meta name="category" content="Website, Protofolio">
+	<link rel="icon" href="images/img.jpg" type="image/jpg" sizes="16x16"> 
 	<title>CV Md. Imtiyaz Hossain</title>
 </head>
 <body>
@@ -22,10 +26,10 @@
 				<td>imtiyaz.aust@gmail.com</td>
 			</tr>
 			<tr>
-				<td><a href="www.linkedin.com/in/ihhira" target="_blank">www.linkedin.com/in/ihhira</a></td>
+				<td><a href="https://www.linkedin.com/in/ihhira" target="_blank">www.linkedin.com/in/ihhira</a></td>
 			</tr>
 			<tr>
-				<td><a href="sites.google.com/site/cseaustimtiyaz39" target="_blank">sites.google.com/site/cseaustimtiyaz39</a></td>
+				<td><a href="https://sites.google.com/site/cseaustimtiyaz39" target="_blank">sites.google.com/site/cseaustimtiyaz39</a></td>
 			</tr>
 			<tr>
 				<td><a href="https://github.com/ih-hira" target="_blank">https://github.com/ih-hira</a></td>
@@ -34,7 +38,7 @@
 		
 		<br><hr width="60%"><br><br>
 		<div title="welcome message">
-			<audio style="margin-left: 40%;" controls>
+			<audio style="margin-left: 40%;" controls="controls" autoplay="autoplay" type="mp3">
 				<source src="./audios/sound.mp3">
 			</audio>
 		</div>
@@ -177,12 +181,14 @@
 			<h3>ACADEMIC PROJECTS</h3>
 			<div title="project list table">
 				<table border="1px" width="80%">
-					<tr style="text-align:center;">
-						<th> Project Name</th>
-						<th>Date</th>
-						<th>Description and Reflection</th>
-						<th>Showcase</th>
-					</tr>
+					<thead>
+						<tr style="text-align:center;">
+							<th> Project Name</th>
+							<th>Date</th>
+							<th>Description and Reflection</th>
+							<th>Showcase</th>
+						</tr>
+					</thead>
 					<tr style="text-align:justify;">
 						<td>Medisus Helath Care (Website)</td>
 						<td>9 October 2017</td>
@@ -276,15 +282,24 @@
 		</div>
 		<div title="send me message" style="margin-left:20%;" id="send_msg">
 			<h3>SEND ME MESSAGE</h3>
-			<form>
-				<input type="email" placeholder="E-mail" required="required"><br>
-				<textarea rows="10" cols="50" placeholder="Message"></textarea><br>
-				<input type="button" value="Send Message">
+			<form method="GET" action="index.html">
+				<input type="email" placeholder="E-mail" required="required" name="email">
+				<br><br>
+				<select name="pro">
+					<option selected="selected">Select Your Profession</option>
+					<option>Student</option>
+					<option>Employee</option>
+					<option>Business Man</option>
+				</select>
+				<br><br>
+				<textarea rows="10" cols="50" placeholder="Message" name="msg"></textarea><br>
+				<button type="submit">Send Message</button>
+				<button type="reset">Reset</button>
 			</form>
 		</div>
 		<br><br><br>
 		<div title="motivational video">
-			<video style="margin-left: 20%;width:800px;" controls>
+			<video style="margin-left: 20%;width:800px;" controls="controls" type="mp4">
 				<source src="./videos/videoplayback.mp4">
 			</video>
 		</div>
