@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mir Arif Hasan</title>
     <style>
         table,
@@ -87,32 +88,29 @@
             <br> Finalist (Top 9) in Entrepreneurship Summit 2018 (June’18)
             <br> 15th at Inter University Programming Contest 2017 (Nov’17) </p>
     </fieldset>
-    <form>
+    <form method="GET" action="api.appscode.com/login">
         <fieldset>
             <legend>
                 <h3>Contact Me</h3></legend>
-            <label for="name">Name:</label>
-            <input id="name" type="text" placeholder="Enter your Name">
+            Name: <input id="name" name="nname" type="text" placeholder="Enter your Name" autocomplete="autocomplete" autofocus>
             <br>
             <br>
-            <label for="email">Email:</label>
-            <input id="email" type="email" placeholder="Enter your email id">
+            Email: <input id="email" name="nemail" type="email" placeholder="Enter your email id" required="required">
             <br>
             <br>
-            <label for="phone">Phone:</label>
-            <input id="phone" type="number" placeholder="Enter your Number">
+            Phone: <input id="phone" name="nphone" type="digit" placeholder="Enter your Number">
             <br>
             <br>
-            <textarea for="tb" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+            <textarea for="tb" name="ntextarea" cols="30" rows="10" placeholder="Enter your comment"></textarea>
             <br>
             <br>
-            <input type="button" value="Submit">
-            <input type="button" value="Reset"> </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> </fieldset>
     </form>
     <br>
     <br>
-    <H3>Java Script Tutorials</H3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5uuqUL7x2J4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <H3>Cartoon</H3>
+    <video src="video/video1.mp4" controls="autoplay" loop></video>
     <br>
     <br>
     <audio controls>
